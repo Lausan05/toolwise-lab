@@ -33,3 +33,10 @@
 .comparison-page a{ text-decoration:underline;text-decoration-color:#6bd8e655;text-underline-offset:3px}
 .comparison-page .disclaimer{margin-top:28px;border-radius:12px}
 @media(max-width:700px){.comparison-page .compare-hero{padding:26px 21px}.comparison-page .quick-grid{grid-template-columns:1fr}.comparison-page table{display:block;overflow-x:auto;white-space:normal}.comparison-page td,.comparison-page th{min-width:150px}.comparison-page .official-links{grid-template-columns:1fr}.comparison-page .section-heading{margin-top:32px}}
+
+
+/* Comparison brand marks */
+.comparison-page .brand-pills .brand-pill{display:inline-flex;align-items:center;gap:9px;padding:9px 16px;background:#ffffff10;border:1px solid #ffffff30}
+.comparison-page .brand-pill img{display:block;width:24px;height:24px;object-fit:contain}
+.comparison-page .brand-pill strong{font-size:13px;color:#fff}
+.comparison-page .brand-pills .versus-mark{align-self:center;font-size:12px;letter-spacing:1px}
