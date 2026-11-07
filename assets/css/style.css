@@ -80,3 +80,24 @@
 /* Keep directory category labels compact at the right of each tool row */
 .toolrow{align-items:flex-start}
 .toolrow>.tag{align-self:flex-start;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:auto;min-width:0;height:auto;min-height:0;white-space:nowrap;line-height:1.4;padding:7px 11px;border-radius:999px}
+
+
+/* Tool directory: branded visual cards with stable local monograms */
+.page .toolrow.tool-card{display:grid;grid-template-columns:58px minmax(0,1fr) auto;align-items:center;gap:17px;padding:19px 20px;margin:12px 0;min-height:118px;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.page .toolrow.tool-card:hover{transform:translateY(-2px);border-color:#65749a;box-shadow:0 12px 28px #05081455}
+.tool-card .tool-mark{width:54px;height:54px;display:grid;place-items:center;border-radius:16px;font:800 27px Manrope;background:#27324d;color:#fff;box-shadow:inset 0 0 0 1px #ffffff16}
+.tool-card .mark-chatgpt{color:#a9f0d9;background:#153d3a}
+.tool-card .mark-eleven{color:#fff;background:#342d58}
+.tool-card .mark-synthesia{color:#fff;background:#354b77}
+.tool-card .mark-zapier{color:#ffb16c;background:#47352c}
+.tool-card .mark-canva{color:#fff;background:linear-gradient(135deg,#3978e8,#8056db);font-style:italic}
+.tool-card .mark-claude{color:#f3b18e;background:#49342f}
+.tool-card .mark-copilot{color:#b6d8ff;background:#263c5d}
+.tool-card .mark-cursor{color:#f4f6ff;background:#343b4d;font-size:22px}
+.tool-card .tool-info{min-width:0}
+.tool-card .tool-info>b{font:800 16px Manrope;color:#fff}
+.tool-card .tool-info p{margin:5px 0 7px;font-size:13px;line-height:1.55}
+.tool-card .tool-info a{font-size:12px;color:var(--cyan);font-weight:700}
+.tool-card .tool-info a:hover{text-decoration:underline}
+.tool-card>.tag{justify-self:end}
+@media(max-width:600px){.page .toolrow.tool-card{grid-template-columns:46px minmax(0,1fr);gap:12px;padding:15px;min-height:0}.tool-card .tool-mark{width:44px;height:44px;border-radius:13px;font-size:23px}.tool-card>.tag{grid-column:2;justify-self:start;margin-top:-5px}.tool-card .tool-info p{font-size:12px}}
