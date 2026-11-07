@@ -101,3 +101,18 @@
 .tool-card .tool-info a:hover{text-decoration:underline}
 .tool-card>.tag{justify-self:end}
 @media(max-width:600px){.page .toolrow.tool-card{grid-template-columns:46px minmax(0,1fr);gap:12px;padding:15px;min-height:0}.tool-card .tool-mark{width:44px;height:44px;border-radius:13px;font-size:23px}.tool-card>.tag{grid-column:2;justify-self:start;margin-top:-5px}.tool-card .tool-info p{font-size:12px}}
+
+
+/* Refined, compact tool directory layout */
+.tools-directory .tool-list{display:grid;gap:12px;margin-top:20px}
+.tools-directory .toolrow.tool-card{display:grid;grid-template-columns:46px minmax(0,1fr) auto;align-items:center;gap:15px;margin:0;padding:17px 19px;min-height:0;border-radius:13px;transition:border-color .18s ease,background .18s ease}
+.tools-directory .toolrow.tool-card:hover{border-color:#465474;background:#1a233a}
+.tools-directory .tool-mark{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;font:700 21px Manrope;background:#27324a;color:#e9edff}
+.tools-directory .mark-chatgpt{color:#a9e8d4}.tools-directory .mark-eleven{color:#d7c7ff}.tools-directory .mark-synthesia{color:#b8d7ff}.tools-directory .mark-zapier{color:#ffc28d}.tools-directory .mark-canva{color:#c8c5ff}.tools-directory .mark-claude{color:#f1b99b}.tools-directory .mark-copilot{color:#b8d9ff}.tools-directory .mark-cursor{color:#fff}
+.tools-directory .tool-info{min-width:0}
+.tools-directory .tool-info>b{font:700 15px Manrope;color:#f4f6ff}
+.tools-directory .tool-info p{margin:3px 0 5px;font-size:12px;line-height:1.5}
+.tools-directory .tool-info a{font-size:12px;color:var(--cyan);font-weight:600}
+.tools-directory .tool-info a:hover{text-decoration:underline}
+.tools-directory .toolrow>.tag{align-self:center;justify-self:end;font-size:10px;padding:5px 9px;border-radius:20px;white-space:nowrap}
+@media(max-width:600px){.tools-directory .toolrow.tool-card{grid-template-columns:38px minmax(0,1fr);gap:11px;padding:14px}.tools-directory .tool-mark{width:36px;height:36px;font-size:19px}.tools-directory .toolrow>.tag{grid-column:2;justify-self:start;margin-top:-2px}}
