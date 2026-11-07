@@ -54,3 +54,9 @@
 .comparison-page .visual-card figcaption strong{font:700 17px Manrope;color:#fff}
 .comparison-page .visual-card figcaption span{font-size:13px;color:var(--muted)}
 @media(max-width:700px){.comparison-page .visual-tour-grid{grid-template-columns:1fr}}
+
+
+/* Reliable local hero marks: no third-party logo image requests */
+.comparison-page .brand-pills .brand-mark{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;font-size:22px;line-height:1;font-family:Arial,sans-serif}
+.comparison-page .brand-pills .chatgpt-mark{color:#b7f2df;text-shadow:0 0 14px #5ce0bd88}
+.comparison-page .brand-pills .claude-mark{color:#f3b18e;text-shadow:0 0 14px #e99a7188}
