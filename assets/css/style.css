@@ -60,3 +60,18 @@
 .comparison-page .brand-pills .brand-mark{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;font-size:22px;line-height:1;font-family:Arial,sans-serif}
 .comparison-page .brand-pills .chatgpt-mark{color:#b7f2df;text-shadow:0 0 14px #5ce0bd88}
 .comparison-page .brand-pills .claude-mark{color:#f3b18e;text-shadow:0 0 14px #e99a7188}
+
+
+/* Clickable assistant symbols and jump-to descriptions */
+.comparison-page .brand-pills a.brand-pill{text-decoration:none;cursor:pointer;transition:transform .18s ease,border-color .18s ease,background .18s ease}
+.comparison-page .brand-pills a.brand-pill:hover,.comparison-page .brand-pills a.brand-pill:focus-visible{transform:translateY(-3px);border-color:#7cddf1;background:#ffffff18;outline:2px solid #6bd8e6;outline-offset:3px}
+.comparison-page .jump-hint{font-size:10px;color:#9eabc8;letter-spacing:.3px}
+.comparison-page .assistant-profiles{margin:34px 0 42px;scroll-margin-top:24px}
+.comparison-page .assistant-profile-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.comparison-page .assistant-profile{scroll-margin-top:28px;padding:24px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#1c2944,#151b2d);box-shadow:0 12px 30px #05081444}
+.comparison-page .assistant-profile h3{margin:12px 0 8px;font-size:21px;color:#fff}
+.comparison-page .assistant-profile p{font-size:14px;line-height:1.75}
+.comparison-page .assistant-profile a{display:inline-block;margin-top:8px;color:#75ddeb;font-weight:700;text-decoration:none}
+.comparison-page .assistant-profile a:hover{text-decoration:underline}
+.comparison-page .profile-symbol{font-size:32px;line-height:1}
+@media(max-width:700px){.comparison-page .assistant-profile-grid{grid-template-columns:1fr}}
